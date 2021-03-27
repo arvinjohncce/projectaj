@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body id="log">
+
+  
+  
+    
+    <div>
+        <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="pic" src="/photos/klipartz.com.png" alt="Kerala" width="150" height="80">
+          </a>
+          <div class="search">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+        </nav>
+    </div>
+     <!-- navbar    -->
+    
+    
+    <!-- option -->
+    <div class="options ">
+    <ul class="nav nav-pills col-md-8 offset-md-3"> 
+      
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+      </li>
+    
+      <li class="nav-item dropdown">
+                          
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" data-hover="dropdown">Districts</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item " href="districtall.html">View All</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="/districts/thrissur.html">Thrissur</a></li>
+          <li><a class="dropdown-item" href="/districts/trivandrum.html">Thiruvananthapuram</a></li>
+          <li><a class="dropdown-item" href="/districts/kozhikode.html">Kozhikode</a></li>
+          <li><a class="dropdown-item" href="/districts/kottayam.html">Kottayam</a></li>
+          <li><a class="dropdown-item" href="/districts/palakad.html">Palakkad</a></li>
+          <li><a class="dropdown-item" href="/districts/wayanad.html">Wayanad</a></li>
+          <li><a class="dropdown-item" href="/districts/idukki.html">Idukki</a></li>
+          <li><a class="dropdown-item" href="/districts/kannur.html">Kannur</a></li>
+          <li><a class="dropdown-item" href="/districts/alapuzha.html">Alappuzha</a></li>
+          <li><a class="dropdown-item" href="/districts/ekm.html">Ernakulam</a></li>
+          <li><a class="dropdown-item" href="/districts/kasargod.html">Kasargod</a></li>
+          <li><a class="dropdown-item" href="/districts/kollam.html">Kollam</a></li>
+          <li><a class="dropdown-item" href="/districts/malappuram.html">Malappuram</a></li>
+          <li><a class="dropdown-item" href="/districts/pathanam.html">Pathanamthitta</a></li>
+        </ul>
+      </li>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signup.html">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      
+     
+    </ul>
+    </div> 
+    <br><br>
+<h1 style="text-align: center; color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold;">Login to your account</h1><br><br><br>
+
+
+<!-- form -->
+<div class="formm shadow-lg p-3 mb-5 bg-body rounded " >
+    <br><br><br>
+    <img src="/photos/klipartz.com.png" alt="ae" style="height: 100px; margin-left: 200px;"><br>
+<form class="cform" style=" padding-top: 200px; padding: 50px; " onsubmit="return validatemail()">
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label> 
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email1" required > <br>
+        <label for="error" id="error1"></label>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label" >Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="pass1" onkeyup="validatePassword();" required> <br>
+        <label for="error" id="error2"></label>
+      </div>
+    </div>
+    <!-- <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            First radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Second radio
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Third disabled radio
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="row mb-3">
+      <div class="col-sm-10 offset-sm-2">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Example checkbox
+          </label>
+        </div>
+      </div>
+    </div> -->
+    <br>
+    <button type="submit" class="btn btn-primary" style="margin-left: 200px;" id="submit">Sign in</button><br><br><br>
+    <p style="text-align: center;">Dont have an account? <a href="signup.html" class="pe-auto">Sign Up</a></p>
+  </form>
+</div><br>
+
+<!-- form -->
+<footer style="background-color: rgba(0, 0, 0, 0.829);  padding: 20px; text-align: center; color: cornsilk;">
+    Website made by Arvin John. Copyright Preserved 2021.
+  </footer>
+  <script src="loginform.js"></script>
+</body>
+</html>

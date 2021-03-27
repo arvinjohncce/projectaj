@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body id="log">
+
+
+    <div>
+        <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="pic" src="/photos/klipartz.com.png" alt="Kerala" width="150" height="80">
+          </a>
+          <div class="search">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+        </nav>
+    </div>
+     <!-- navbar    -->
+    
+    
+    <!-- option -->
+    <div class="options ">
+    <ul class="nav nav-pills col-md-8 offset-md-3"> 
+      
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+      </li>
+    
+      <li class="nav-item dropdown">
+                          
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" data-hover="dropdown">Districts</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item " href="districtall.html">View All</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="/districts/thrissur.html">Thrissur</a></li>
+          <li><a class="dropdown-item" href="/districts/trivandrum.html">Thiruvananthapuram</a></li>
+          <li><a class="dropdown-item" href="/districts/kozhikode.html">Kozhikode</a></li>
+          <li><a class="dropdown-item" href="/districts/kottayam.html">Kottayam</a></li>
+          <li><a class="dropdown-item" href="/districts/palakad.html">Palakkad</a></li>
+          <li><a class="dropdown-item" href="/districts/wayanad.html">Wayanad</a></li>
+          <li><a class="dropdown-item" href="/districts/idukki.html">Idukki</a></li>
+          <li><a class="dropdown-item" href="/districts/kannur.html">Kannur</a></li>
+          <li><a class="dropdown-item" href="/districts/alapuzha.html">Alappuzha</a></li>
+          <li><a class="dropdown-item" href="/districts/ekm.html">Ernakulam</a></li>
+          <li><a class="dropdown-item" href="/districts/kasargod.html">Kasargod</a></li>
+          <li><a class="dropdown-item" href="/districts/kollam.html">Kollam</a></li>
+          <li><a class="dropdown-item" href="/districts/malappuram.html">Malappuram</a></li>
+          <li><a class="dropdown-item" href="/districts/pathanam.html">Pathanamthitta</a></li>
+        </ul>
+      </li>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="login.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      
+     
+    </ul>
+    </div> 
+    <br><br>
+    <h1 style="text-align: center; color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold;">Sign Up for Exclusive Packages</h1><br><br><br>
+  
+    <div class="sign shadow-lg p-3 mb-5 bg-body rounded" style="background: white;">
+        <img src="/photos/klipartz.com.png" alt="ae" style="height: 100px; margin-left: 200px;"><br>
+    <form class="row g-3" style="padding: 50px;" onsubmit="return validatemail();">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email1" required> <br><label for="error" id="error1"></label>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass1" required onkeyup="validatePassword()">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="pass2" required> <br><label for="error" id="error2"></label>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Phone No.</label>
+          <input type="text" class="form-control" id="phon" required> <br> <label for="error" id="error3"></label>
+
+        </div>
+        <!-- <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div> -->
+       
+        <div class="col-12" style="text-align: center;">
+            <br>
+          <button type="submit" class="btn btn-primary" onclick="return phonenumber()">Sign in</button>
+        </div>
+      </form>
+
+   </div> <br>
+
+   <footer style="background-color: rgba(0, 0, 0, 0.829);  padding: 20px; text-align: center; color: cornsilk;">
+    Website made by Arvin John. Copyright Preserved 2021.
+  </footer>
+  <script src="signform.js"></script>
+</body>
+</html>
